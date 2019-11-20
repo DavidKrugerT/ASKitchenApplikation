@@ -6,13 +6,93 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <Button
+        android:id="@+id/updateMenuButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/previewMenu"
+        android:layout_width="0dp"
+        android:layout_height="388dp"
+        android:layout_marginTop="203dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginRight="244dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginRight="149dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/previewMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/mondayLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Matträtt mondag"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="157dp" />
+
+        <EditText
+            android:id="@+id/tuesdayLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Maträtt Tisdag"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <EditText
+            android:id="@+id/wednesdayLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Onsdag"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="296dp" />
+
+        <EditText
+            android:id="@+id/thursdayLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Torsdag"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="361dp" />
+
+        <EditText
+            android:id="@+id/fridayLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Fredag"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="436dp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
