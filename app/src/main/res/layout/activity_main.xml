@@ -11,21 +11,21 @@
         android:id="@+id/updateMenuButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="32dp"
-        android:text="Button"
+        android:text="Spara Lunchmeny"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <TextView
         android:id="@+id/previewMenu"
-        android:layout_width="0dp"
-        android:layout_height="388dp"
+        android:layout_width="439dp"
+        android:layout_height="392dp"
         android:layout_marginTop="203dp"
         android:layout_marginEnd="244dp"
         android:layout_marginRight="244dp"
-        android:text="TextView"
+        android:text="  Lunchmeny för veckan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,8 +34,8 @@
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="225dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="149dp"
         android:layout_marginRight="149dp"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Matträtt mondag"
+            android:text="Måndag"
             tools:layout_editor_absoluteX="68dp"
             tools:layout_editor_absoluteY="157dp" />
 
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Maträtt Tisdag"
+            android:text="Tisdag"
             tools:layout_editor_absoluteX="68dp"
             tools:layout_editor_absoluteY="231dp" />
 
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:text="Fredag"
             tools:layout_editor_absoluteX="76dp"
             tools:layout_editor_absoluteY="436dp" />
 
@@ -104,26 +104,26 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="481dp"
+            android:id="@+id/editMenuButton"
+            android:layout_width="426dp"
             android:layout_height="85dp"
-            android:text="Button"
+            android:text="Veckans Meny"
             tools:layout_editor_absoluteX="35dp"
             tools:layout_editor_absoluteY="129dp" />
 
         <Button
-            android:id="@+id/button5"
-            android:layout_width="389dp"
+            android:id="@+id/stockMenuButton"
+            android:layout_width="426dp"
             android:layout_height="85dp"
-            android:text="Button"
+            android:text="Lager"
             tools:layout_editor_absoluteX="44dp"
             tools:layout_editor_absoluteY="185dp" />
 
         <Button
-            android:id="@+id/button6"
-            android:layout_width="404dp"
+            android:id="@+id/scheduleMenuButton"
+            android:layout_width="426dp"
             android:layout_height="match_parent"
-            android:text="Button"
+            android:text="Schema"
             tools:layout_editor_absoluteX="154dp"
             tools:layout_editor_absoluteY="185dp" />
 
