@@ -38,22 +38,40 @@ private Button editMenuButton;
         updateLunchButton.setOnClickListener(this);
 
         scheduleMenuButton = (Button) findViewById(R.id.scheduleMenuButton);
+        scheduleMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSchedule();
+            }
+        });
         editMenuButton = (Button) findViewById(R.id.editMenuButton);
-
+        editMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEditMenu();
+            }
+        });
 
         stockMenuButton = (Button) findViewById(R.id.stockMenuButton);
         stockMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 openStock();
             }
         });
-
 
     }
 
     public void openStock(){
         Intent intent = new Intent(this, stock.class);
+        startActivity(intent);
+    }
+    public void openEditMenu(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+    public void openSchedule(){
+        Intent intent = new Intent(this, schedule.class);
         startActivity(intent);
     }
 
