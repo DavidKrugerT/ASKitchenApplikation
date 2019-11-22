@@ -7,103 +7,14 @@
     tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/updateMenuButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="32dp"
-        android:text="Spara Lunchmeny"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
-
-    <TextView
-        android:id="@+id/previewMenu"
-        android:layout_width="439dp"
-        android:layout_height="392dp"
-        android:layout_marginTop="203dp"
-        android:layout_marginEnd="244dp"
-        android:layout_marginRight="244dp"
-        android:text="  Lunchmeny för veckan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="225dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="149dp"
-        android:layout_marginRight="149dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/previewMenu"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <EditText
-            android:id="@+id/mondayLunch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Måndag"
-            tools:layout_editor_absoluteX="68dp"
-            tools:layout_editor_absoluteY="157dp" />
-
-        <EditText
-            android:id="@+id/tuesdayLunch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Tisdag"
-            tools:layout_editor_absoluteX="68dp"
-            tools:layout_editor_absoluteY="231dp" />
-
-        <EditText
-            android:id="@+id/wednesdayLunch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Onsdag"
-            tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="296dp" />
-
-        <EditText
-            android:id="@+id/thursdayLunch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Torsdag"
-            tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="361dp" />
-
-        <EditText
-            android:id="@+id/fridayLunch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Fredag"
-            tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="436dp" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/menuLayout"
         android:layout_width="1280dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="667dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
 
         <Button
             android:id="@+id/editMenuButton"
@@ -132,17 +43,17 @@
 
     </LinearLayout>
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="548dp"
-        android:layout_marginRight="548dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="336dp"
         android:text="TEST"
         android:textSize="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menuLayout" />
 
 
