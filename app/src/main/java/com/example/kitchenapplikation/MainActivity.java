@@ -2,6 +2,7 @@ package com.example.kitchenapplikation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,10 @@ private Button updateLunchButton;
 private TextView previewMenu;
 private LunchMenu lunchMenu = new LunchMenu();
 
+private Button stockMenuButton;
+private Button scheduleMenuButton;
+private Button editMenuButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,12 +33,30 @@ private LunchMenu lunchMenu = new LunchMenu();
         wednesdayLunch = (EditText) findViewById(R.id.wednesdayLunch);
         thursdayLunch = (EditText) findViewById(R.id.thursdayLunch);
         fridayLunch = (EditText) findViewById(R.id.fridayLunch);
-        previewMenu = findViewById(R.id.previewMenu);
-
-        updateLunchButton = findViewById(R.id.updateMenuButton);
+        previewMenu = (TextView) findViewById(R.id.previewMenu);
+        updateLunchButton = (Button) findViewById(R.id.updateMenuButton);
         updateLunchButton.setOnClickListener(this);
 
+        scheduleMenuButton = (Button) findViewById(R.id.scheduleMenuButton);
+        editMenuButton = (Button) findViewById(R.id.editMenuButton);
+
+
+        stockMenuButton = (Button) findViewById(R.id.stockMenuButton);
+        stockMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openStock();
+            }
+        });
+
+
     }
+
+    public void openStock(){
+        Intent intent = new Intent(this, stock.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onClick(View view){
         lunchMenu.setMonday(mondayLunch.getText().toString());
@@ -45,5 +68,6 @@ private LunchMenu lunchMenu = new LunchMenu();
         previewMenu.setText(lunchMenu.toString());
 
     }
+
 
 }
