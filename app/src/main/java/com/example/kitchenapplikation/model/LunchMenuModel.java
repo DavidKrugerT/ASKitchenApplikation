@@ -1,6 +1,6 @@
-package com.example.kitchenapplikation;
+package com.example.kitchenapplikation.model;
 
-public class LunchMenu {
+public class LunchMenuModel {
 
     private String monday;
     private String tuesday;

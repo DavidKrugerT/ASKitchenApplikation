@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.kitchenapplikation.model.LunchMenuModel;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 private EditText mondayLunch;
 private EditText tuesdayLunch;
@@ -17,7 +19,7 @@ private EditText thursdayLunch;
 private EditText fridayLunch;
 private Button updateLunchButton;
 private TextView previewMenu;
-private LunchMenu lunchMenu = new LunchMenu();
+private LunchMenuModel lunchMenu = new LunchMenuModel();
 
 private Button stockMenuButton;
 private Button scheduleMenuButton;
