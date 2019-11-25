@@ -63,7 +63,7 @@ private Button editMenuButton;
     }
 
     public void openStock(){
-        Intent intent = new Intent(this, stock.class);
+        Intent intent = new Intent(this, StorageActivity.class);
         startActivity(intent);
     }
     public void openEditMenu(){
@@ -71,7 +71,7 @@ private Button editMenuButton;
         startActivity(intent);
     }
     public void openSchedule(){
-        Intent intent = new Intent(this, schedule.class);
+        Intent intent = new Intent(this, ScheduleActivity.class);
         startActivity(intent);
     }
 

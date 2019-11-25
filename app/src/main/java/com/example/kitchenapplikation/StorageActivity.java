@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class schedule extends AppCompatActivity {
+
+public class StorageActivity extends AppCompatActivity {
     private Button stockMenuButton;
     private Button scheduleMenuButton;
     private Button editMenuButton;
@@ -15,7 +16,7 @@ public class schedule extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_schedule);
+        setContentView(R.layout.activity_stock);
 
         scheduleMenuButton = (Button) findViewById(R.id.scheduleMenuButton);
         scheduleMenuButton.setOnClickListener(new View.OnClickListener() {
@@ -40,8 +41,9 @@ public class schedule extends AppCompatActivity {
         });
 
     }
+
     public void openStock(){
-        Intent intent = new Intent(this, stock.class);
+        Intent intent = new Intent(this, StorageActivity.class);
         startActivity(intent);
     }
     public void openEditMenu(){
@@ -49,7 +51,8 @@ public class schedule extends AppCompatActivity {
         startActivity(intent);
     }
     public void openSchedule(){
-        Intent intent = new Intent(this, schedule.class);
+        Intent intent = new Intent(this, ScheduleActivity.class);
         startActivity(intent);
     }
+
 }
