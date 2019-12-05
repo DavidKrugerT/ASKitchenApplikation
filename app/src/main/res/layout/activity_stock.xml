@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#232631"
     tools:context=".StorageActivity">
-
 
 
     <LinearLayout
         android:id="@+id/menuLayout"
-        android:layout_width="1280dp"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -19,16 +20,22 @@
         <Button
             android:id="@+id/editMenuButton"
             android:layout_width="426dp"
-            android:layout_height="85dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
             android:text="Veckans Meny"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
             tools:layout_editor_absoluteX="35dp"
             tools:layout_editor_absoluteY="129dp" />
 
         <Button
             android:id="@+id/stockMenuButton"
             android:layout_width="426dp"
-            android:layout_height="85dp"
+            android:layout_height="match_parent"
+            android:background="#CDCECE"
             android:text="Lager"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
             tools:layout_editor_absoluteX="44dp"
             tools:layout_editor_absoluteY="185dp" />
 
@@ -36,7 +43,10 @@
             android:id="@+id/scheduleMenuButton"
             android:layout_width="426dp"
             android:layout_height="match_parent"
+            android:background="@android:color/white"
             android:text="Schema"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
             tools:layout_editor_absoluteX="154dp"
             tools:layout_editor_absoluteY="185dp" />
 
@@ -45,16 +55,41 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/StockHeaderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="336dp"
-        android:text="TEST"
-        android:textSize="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginBottom="32dp"
+        android:text="Lagerstatus"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/stockLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/stockLayout"
+        android:layout_width="1197dp"
+        android:layout_height="562dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@android:color/white"
+        android:divider="@android:color/black"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/menuLayout">
+
+        <ListView
+            android:id="@+id/stockListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/white" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#232631"
     tools:context=".ScheduleActivity">
 
 
@@ -11,6 +12,7 @@
         android:id="@+id/menuLayout"
         android:layout_width="1280dp"
         android:layout_height="0dp"
+        android:background="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -19,7 +21,10 @@
             android:id="@+id/editMenuButton"
             android:layout_width="426dp"
             android:layout_height="85dp"
+            android:background="@android:color/white"
             android:text="Veckans Meny"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
             tools:layout_editor_absoluteX="35dp"
             tools:layout_editor_absoluteY="129dp" />
 
@@ -27,7 +32,10 @@
             android:id="@+id/stockMenuButton"
             android:layout_width="426dp"
             android:layout_height="85dp"
+            android:background="@android:color/white"
             android:text="Lager"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
             tools:layout_editor_absoluteX="44dp"
             tools:layout_editor_absoluteY="185dp" />
 
@@ -35,7 +43,10 @@
             android:id="@+id/scheduleMenuButton"
             android:layout_width="426dp"
             android:layout_height="match_parent"
+            android:background="#CDCECE"
             android:text="Schema"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
             tools:layout_editor_absoluteX="154dp"
             tools:layout_editor_absoluteY="185dp" />
 
@@ -49,6 +60,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="264dp"
+        android:background="@android:color/white"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -59,7 +71,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Shift Typ (Lunch/Evning)" />
+            android:text="Shift Typ (Lunch/Evning)"
+            android:textColor="@android:color/black" />
 
         <EditText
             android:id="@+id/date"
@@ -67,7 +80,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="YYYY-MM-DD"
-            android:inputType="date" />
+            android:inputType="date"
+            android:textColor="@android:color/black" />
 
         <Spinner
             android:id="@+id/nameSpinner"
@@ -83,17 +97,20 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="32dp"
+        android:background="@android:color/white"
         android:text="Add shift to Schedule"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/personLayout"
         app:layout_constraintTop_toBottomOf="@+id/personLayout" />
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="225dp"
+        android:layout_height="47dp"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
         android:layout_marginBottom="32dp"
+        android:background="@android:color/white"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Staff name"
@@ -107,7 +124,9 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginBottom="32dp"
+        android:background="@android:color/white"
         android:text="Add Staff"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toTopOf="@+id/personLayout"
         app:layout_constraintStart_toEndOf="@+id/name" />
 

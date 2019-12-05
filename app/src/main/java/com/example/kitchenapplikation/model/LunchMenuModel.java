@@ -52,7 +52,7 @@ public class LunchMenuModel {
 
     @Override
     public String toString(){
-        return "Lunch Mondey: " + getMonday() + "\n\r" + "Tuesday: " + getTuesday() + "\n\r" + "Wednesday: " + getWednesday() + "\n\r" + "Thursday: " + getThursday() + "\n\r" + "Friday: " + getFriday();
+        return "Lunch menu for the week: \n" + "Monday: " + getMonday() + "\n\r" + "Tuesday: " + getTuesday() + "\n\r" + "Wednesday: " + getWednesday() + "\n\r" + "Thursday: " + getThursday() + "\n\r" + "Friday: " + getFriday();
     }
 
 
